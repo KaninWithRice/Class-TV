@@ -1,15 +1,14 @@
 class TV:
-    def __init__(tv, channel, volumelevel, onoroff):
-        tv.name = tv
+    def __init__(tv, name, channel, volumelevel):
+        tv.name = name
         tv.cha = channel
         tv.vlvl = volumelevel
-        tv.on = onoroff
 
-    def tv_start(tv):
+    def TestTV(tv):
         print(tv.name + "channel is" + tv.cha + "and volume level is" + tv.vlvl)
 
-tv1 = TV("tv1", "02", "50")
-tv2 = TV("tv2", "14", "70")
+tv1 = TV("tv1", " 22 ", " 50 ")
+tv2 = TV("tv2", " 14 ", " 70 ")
 
-tv1.tv_start()
-tv2.tv_start()
+tv1.TestTV()
+tv2.TestTV()

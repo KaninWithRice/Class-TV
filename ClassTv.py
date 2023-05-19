@@ -14,12 +14,18 @@ class TV:
 
     def get_channel_num(tv):
         return tv.cha
-    def set_channel_num (tv, channel):
+    def set_channel_num(tv, channel):
         if 0 <= channel <= 120:
-            print (tv.name,"'s channel is", tv.cha)
+            print (tv.name,"'s Channel is : ", tv.cha)
         else:
-            print ("Enter a channel Between (1-120)")
+            print ("Enter a Channel Between (1-120)")
             return tv.cha
 
     def get_volume_lvl(tv):
-        return
+        return tv.vlvl
+    def set_volume_lvl(tv, volumelevel):
+        if 0 <= volumelevel <= 7:
+            print (tv.name,"'s Volume Level is : ", tv.vlvl)
+        else:
+            print ("Enter a Volume Level Between (1-7)")
+            return tv.vlvl

@@ -29,3 +29,13 @@ class TV:
         else:
             print ("Enter a Volume Level Between (1-7)")
             return tv.vlvl
+    
+    def channel_plus(tv):
+        tv.cha += 1
+    def volume_plus(tv):
+        tv.vlvl += 1    
+
+    def channel_minus(tv):
+        tv.cha -= 1
+    def volume_minus(tv):
+        tv.vlvl -= 1

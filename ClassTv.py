@@ -12,7 +12,7 @@ class TV:
         if tv.stat == 1:
             print("Status: ON")
         elif tv.stat == 0:
-            print("Status: OFF")
+            print("Turning off Thank you")
         else:
             return tv.stat
     # Channel Function

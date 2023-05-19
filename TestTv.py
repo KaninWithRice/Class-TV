@@ -45,10 +45,14 @@ def TestTV():
 TestTV()
 # TestTV2 Function
 def TestTV():
-    tv2 = TV(40,6,True)
+    tv2 = TV(40,6,1)
     tv2.set_statustv()
     tv2.set_channel_num(40)
     tv2.set_volume_lvl(6)
-    print("Tv2's Channel is", (tv2.get_channel_num())," and Volume is ", (tv2.get_volume_lvl())) # Print Output
+    print("Tv2's Channel is", (tv2.get_channel_num())," and Volume is ", (tv2.get_volume_lvl()),"\n") # Print Output
+TestTV()
+def TestTV():
+    tv2 = TV(40,6,0)
+    tv2.set_statustv()
 TestTV()
 

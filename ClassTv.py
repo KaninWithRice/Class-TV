@@ -5,13 +5,16 @@ class TV:
         tv.cha = channel
         tv.vlvl = volumelevel
         tv.stat = status
-    # TV Status Function    
-    def statustv(tv):
-        tv.status = True
-        print("Status: ON")
-    def statustv(tv):
-        tv.status = False
-        print("Status: OFF")
+    # TV Status Function
+    def get_status(tv):
+        return tv.stat 
+    def set_statustv(tv):
+        if tv.stat == 1:
+            print("Status: ON")
+        elif tv.stat == 0:
+            print("Status: OFF")
+        else:
+            return tv.stat
     # Channel Function
     def get_channel_num(tv):
         return tv.cha
